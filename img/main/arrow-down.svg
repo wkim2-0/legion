@@ -1,0 +1,16 @@
+<svg width="16.000000" height="16.000000" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+	<desc>
+			Created with Pixso.
+	</desc>
+	<defs>
+		<clipPath id="clip4016_3116">
+			<rect id="Badge" rx="3.500000" width="15.000000" height="15.000000" transform="translate(0.500000 0.500000)" fill="white" fill-opacity="0"/>
+		</clipPath>
+	</defs>
+	<g opacity="0.500000">
+		<rect id="Badge" rx="3.500000" width="15.000000" height="15.000000" transform="translate(0.500000 0.500000)" fill="#9992AA" fill-opacity="1.000000"/>
+		<g clip-path="url(#clip4016_3116)">
+			<path id="↓" d="M8.48 11.37L8.48 3.61L7.51 3.61L7.51 11.37L4.41 8.48L4.41 9.79L8 13.12L11.58 9.79L11.58 8.48L8.48 11.37Z" fill="#FFFFFF" fill-opacity="1.000000" fill-rule="evenodd"/>
+		</g>
+	</g>
+</svg>

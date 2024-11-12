@@ -1,0 +1,14 @@
+<svg width="16.000000" height="16.000000" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+	<desc>
+			Created with Pixso.
+	</desc>
+	<defs>
+		<clipPath id="clip2011_3161">
+			<rect id="Badge" rx="7.500000" width="15.000000" height="15.000000" transform="translate(0.500000 0.500000)" fill="white" fill-opacity="0"/>
+		</clipPath>
+	</defs>
+	<rect id="Badge" rx="7.500000" width="15.000000" height="15.000000" transform="translate(0.500000 0.500000)" fill="#E91414" fill-opacity="1.000000"/>
+	<g clip-path="url(#clip2011_3161)">
+		<circle id="Ellipse 1" cx="8.000000" cy="8.000000" r="4.000000" fill="#FFFFFF" fill-opacity="1.000000"/>
+	</g>
+</svg>

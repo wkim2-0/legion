@@ -1,0 +1,705 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Simonetta&family=Tenor+Sans&family=Wix+Madefor+Display:wght@500..700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <header class="header">
+        <div class="header__wrap">
+            <div class="header__left">
+                <div class="header__hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+                <div class="header__logo">
+                    <img src="img/Logo.png" alt="logo">
+                </div>
+                <nav class="header__tabs">
+                    <ul class="header__tabs-wrap">
+                        <li class="header__tab header__tab_active">
+                            <div class="header__tab-icon">
+                                <img src="img/tabs/Matches.svg" alt="Matches">
+                            </div>
+                            <span>Матчи</span>
+                        </li>
+                        <li class="header__tab">
+                            <div class="header__tab-icon">
+                                <img src="img//tabs/Tables.svg" alt="Tables">
+                            </div>
+                            <span>Таблицы</span>
+                        </li>
+                        <li class="header__tab">
+                            <div class="header__tab-icon">
+                                <img src="img/tabs/Tables.svg" alt="Tables">
+                            </div>
+                            <span>Новости</span>
+                        </li>
+                        <li class="header__tab">
+                            <div class="header__tab-icon">
+                                <img src="img/tabs/Players.svg" alt="Players">
+                            </div>
+                            <span>Игроки</span>
+                        </li>
+                        <li class="header__tab">
+                            <div class="header__tab-icon">
+                                <img src="img/tabs/Coaches.svg" alt="Coaches">
+                            </div>
+                            <span>Тренеры</span>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="header__right">
+                <nav class="header__nav">
+                    <ul>
+                        <li><a href="#">Контакты</a></li>
+                        <li><a href="#">О сайте</a></li>
+                    </ul>
+                </nav>
+                <div class="header__login">
+                    <div class="header__login-icon">
+                        <svg><use xlink:href="#login"></use></svg>
+                    </div>
+                    <span>Войти</span>
+                </div>
+            </div>
+        </div>
+        <div class="header__mob">
+            <nav class="header__tabs swiper">
+                <ul class="header__tabs-wrap swiper-wrapper">
+                    <li class="header__tab header__tab_active swiper-slide">
+                        <div class="header__tab-icon">
+                            <img src="img/tabs/Matches.svg" alt="Matches">
+                        </div>
+                        <span>Матчи</span>
+                    </li>
+                    <li class="header__tab swiper-slide">
+                        <div class="header__tab-icon">
+                            <img src="img/tabs/Tables.svg" alt="Tables">
+                        </div>
+                        <span>Таблицы</span>
+                    </li>
+                    <li class="header__tab swiper-slide">
+                        <div class="header__tab-icon">
+                            <img src="img/tabs/Tables.svg" alt="Tables">
+                        </div>
+                        <span>Новости</span>
+                    </li>
+                    <li class="header__tab swiper-slide">
+                        <div class="header__tab-icon">
+                            <img src="img/tabs/Players.svg" alt="Players">
+                        </div>
+                        <span>Игроки</span>
+                    </li>
+                    <li class="header__tab swiper-slide">
+                        <div class="header__tab-icon">
+                            <img src="img/tabs/Coaches.svg" alt="Coaches">
+                        </div>
+                        <span>Тренеры</span>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <div class="wrapper">
+            <div class="wrapper__center">
+                <section class="filter">
+                    <div class="filter__header">
+                        <h2 class="filter__title">Команды</h2>
+                        <div class="filter__subtitle">
+                            Выбрано: <span>3</span>
+                        </div>
+                        <div class="filter__list">
+                            <div class="filter__icon">
+                                <img src="img/filter-list.svg" alt="list">
+                            </div>
+                            <span>Показать списком</span>
+                        </div>
+                    </div>
+                    <div>
+                        <ul class="filter__main">
+                            <li>
+                                <label class="filter__picker filter__picker_all">
+                                    <input type="checkbox" class="real-checkbox">
+                                    <span class="custom-checkbox custom-checkbox_all"></span>
+                                    <p>Выбрать все</p>
+                                </label>
+                            </li>
+                            <li>
+                                <label class="filter__picker filter__picker_one">
+                                    <input type="checkbox" class="real-checkbox">
+                                    <span class="custom-checkbox"></span>
+                                    <p>Зенит</p>
+                                </label>
+                            </li>
+                            <li>
+                                <label class="filter__picker filter__picker_one">
+                                    <input type="checkbox" class="real-checkbox">
+                                    <span class="custom-checkbox"></span>
+                                    <p>Локомотив</p>
+                                </label>
+                            </li>
+                            <li>
+                                <label class="filter__picker filter__picker_one">
+                                    <input type="checkbox" class="real-checkbox">
+                                    <span class="custom-checkbox"></span>
+                                    <p>Динамо</p>
+                                </label>
+                            </li>
+                            <li>
+                                <label class="filter__picker filter__picker_one">
+                                    <input type="checkbox" class="real-checkbox">
+                                    <span class="custom-checkbox"></span>
+                                    <p>Спартак</p>
+                                </label>
+                            </li>
+                            <li>
+                                <label class="filter__picker filter__picker_one">
+                                    <input type="checkbox" class="real-checkbox">
+                                    <span class="custom-checkbox"></span>
+                                    <p>Ростов</p>
+                                </label>
+                            </li>
+                            <li>
+                                <label class="filter__picker filter__picker_one">
+                                    <input type="checkbox" class="real-checkbox">
+                                    <span class="custom-checkbox"></span>
+                                    <p>Краснодар</p>
+                                </label>
+                            </li>
+                            <li>
+                                <label class="filter__picker filter__picker_one">
+                                    <input type="checkbox" class="real-checkbox">
+                                    <span class="custom-checkbox"></span>
+                                    <p>Крылья Советов</p>
+                                </label>
+                            </li>
+                        </ul>
+                    </div>
+                </section>
+                <section class="main">
+                    <div class="main__header">
+                        <ul class="main__tabs">
+                            <li class="main__tab main__tab_active">Все матчи</li>
+                            <li class="main__tab">Идут сейчас</li>
+                            <li class="main__tab">Будут скоро</li>
+                            <li class="main__tab">Результаты</li>
+                        </ul>
+                        <div class="main__setting">
+                            <div class="main__setting-icon">
+                                <img src="img/main/Settings.svg" alt="Settings">
+                            </div>
+                            <span>Настройки</span>
+                        </div>
+                    </div>
+                    <div class="main__main">
+                        <div class="main__now">
+                            <div class="main__main-header">
+                                <h2 class="main__title">Идут сейчас</h2>
+                                <div class="main__now-date">
+                                    <div class="main__now-live">
+                                        <img src="img/main/live.svg" alt="live">
+                                    </div>
+                                    <span>19 сентября</span>
+                                </div>
+                            </div>
+                            <ul>
+                                <li class="main__content">
+                                    <div class="main__content-left">
+                                        <div class="main__start">
+                                            <span>Начало:</span>
+                                            17:00
+                                        </div>
+                                        <div class="main__now-substart">
+                                            <div class="main__now-red-circle">
+                                                <img src="img/main/red-circle.svg" alt="red-circle">
+                                            </div>
+                                            <div class="main__now-substart-number">
+                                                78 
+                                                <span>´</span>
+                                            </div>
+                                        </div>
+                                        <span class="main__time">2-й тайм</span>
+                                    </div>
+                                    <div class="main__content-center">
+                                        <div class="main__teams">
+                                            <div class="main__team-left">
+                                                <span>Бавария</span>
+                                                <div class="main__team-icon">
+                                                    <img src="img/main/team.svg" alt="team">
+                                                </div>
+                                            </div>
+                                            <span class="main__vs">VS</span>
+                                            <div class="main__team-right">
+                                                <div class="main__team-icon">
+                                                    <img src="img/main/team2.svg" alt="team">
+                                                </div>
+                                                <span>Боруссия М</span>
+                                            </div>
+                                        </div>
+                                        <div class="main__score">2:1 (1:0)</div>
+                                        <ul>
+                                            <li class="main__players main__players_left">
+                                                <ul class="main__players-center">
+                                                    <li>
+                                                        <div class="main__players-center-icon">
+                                                            <img src="img/main/arrow-up.svg" alt="arrow-up">
+                                                        </div>
+                                                        <div class="main__players-center-number">
+                                                            1
+                                                            <span>´</span>
+                                                        </div>
+                                                    </li>
+                                                    <li>
+                                                        <div class="main__players-center-icon">
+                                                            <img src="img/main/gol.svg" alt="gol">
+                                                        </div>
+                                                        <span>43´</span>
+                                                    </li>
+                                                    <li>
+                                                        <div class="main__players-center-icon">
+                                                            <img src="img/main/kk.svg" alt="kk">
+                                                        </div>
+                                                        <span>79´</span>
+                                                    </li>
+                                                </ul>
+                                                <div class="main__player">
+                                                    <span class="main__player-team">ЗЕН</span>
+                                                    <span class="main__player-name">Марадона</span>
+                                                </div>
+                                            </li>
+                                            <li class="main__players main__players_right">
+                                                <ul class="main__players-center">
+                                                    <li>
+                                                        <div class="main__players-center-icon">
+                                                            <img src="img/main/arrow-up.svg" alt="arrow-up">
+                                                        </div>
+                                                        <span>1´</span>
+                                                    </li>
+                                                    <li>
+                                                        <div class="main__players-center-icon">
+                                                            <img src="img/main/arrow-down.svg" alt="arrow-down">
+                                                        </div>
+                                                        <span>69´</span>
+                                                    </li>
+                                                </ul>
+                                                <div class="main__player">
+                                                    <span class="main__player-team">ЛОК</span>
+                                                    <span class="main__player-name">Зидан</span>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="main__table">
+                                        <div class="main__table-icon">
+                                            <img src="img/tabs/Tables.svg" alt="Tables">
+                                        </div>
+                                        <span>Таблицы</span>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="main__soon">
+                            <div class="main__main-header">
+                                <h2 class="main__title">Скоро</h2>
+                                <ul class="main__main-tabs">
+                                    <li class="main__main-tab main__main-tab_active">Неделя</li>
+                                    <li class="main__main-tab">Месяц</li>
+                                    <li class="main__main-tab">Этот год</li>
+                                </ul>
+                                <div class="main__main-header-right">
+                                    <div class="main__table-icon">
+                                        <img src="img/main/table-fiolet.svg" alt="Tables">
+                                    </div>
+                                    <span>Выбрать период</span>
+                                </div>
+                            </div>
+                            <ul>
+                                <li class="main__content">
+                                    <div class="main__content-left main__content-left_soon">
+                                        <div class="main__date">12.10.24</div>
+                                        <div class="main__start">
+                                            <span>Начало:</span>
+                                            17:00
+                                        </div>
+                                    </div>
+                                    <div class="main__content-center main__content-center_soon">
+                                        <div class="main__teams">
+                                            <div class="main__team-left">
+                                                <span>Бавария</span>
+                                                <div class="main__team-icon">
+                                                    <img src="img/main/team.svg" alt="team">
+                                                </div>
+                                            </div>
+                                            <span class="main__vs">VS</span>
+                                            <div class="main__team-right">
+                                                <div class="main__team-icon">
+                                                    <img src="img/main/team2.svg" alt="team">
+                                                </div>
+                                                <span>Боруссия М</span>
+                                            </div>
+                                        </div>
+                                        <ul>
+                                            <li class="main__players main__players_left">
+                                                <ul class="main__players-center">
+                                                    <li>
+                                                        <div class="main__players-center-icon">
+                                                            <img src="img/main/arrow-up.svg" alt="arrow-up">
+                                                        </div>
+                                                        <div class="main__players-center-number">
+                                                            1
+                                                            <span>´</span>
+                                                        </div>
+                                                    </li>
+                                                    <li>
+                                                        <div class="main__players-center-icon">
+                                                            <img src="img/main/gol.svg" alt="gol">
+                                                        </div>
+                                                        <span>43´</span>
+                                                    </li>
+                                                    <li>
+                                                        <div class="main__players-center-icon">
+                                                            <img src="img/main/kk.svg" alt="kk">
+                                                        </div>
+                                                        <span>79´</span>
+                                                    </li>
+                                                </ul>
+                                                <div class="main__player">
+                                                    <span class="main__player-team">ЗЕН</span>
+                                                    <span class="main__player-name">Марадона</span>
+                                                </div>
+                                            </li>
+                                            <li class="main__players main__players_right">
+                                                <ul class="main__players-center">
+                                                    <li>
+                                                        <div class="main__players-center-icon">
+                                                            <img src="img/main/arrow-up.svg" alt="arrow-up">
+                                                        </div>
+                                                        <span>1´</span>
+                                                    </li>
+                                                    <li>
+                                                        <div class="main__players-center-icon">
+                                                            <img src="img/main/arrow-down.svg" alt="arrow-down">
+                                                        </div>
+                                                        <span>69´</span>
+                                                    </li>
+                                                </ul>
+                                                <div class="main__player">
+                                                    <span class="main__player-team">ЛОК</span>
+                                                    <span class="main__player-name">Зидан</span>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="main__table">
+                                        <div class="main__table-icon">
+                                            <img src="img/tabs/Tables.svg" alt="Tables">
+                                        </div>
+                                        <span>Таблицы</span>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="main__results">
+                            <div class="main__main-header">
+                                <h2 class="main__title">Результаты</h2>
+                                <ul class="main__main-tabs">
+                                    <li class="main__main-tab main__main-tab_active">Неделя</li>
+                                    <li class="main__main-tab">Месяц</li>
+                                    <li class="main__main-tab">Этот год</li>
+                                </ul>
+                                <div class="main__main-header-right">
+                                    <div class="main__table-icon">
+                                        <img src="img/main/table-fiolet.svg" alt="Tables">
+                                    </div>
+                                    <span>Выбрать период</span>
+                                </div>
+                            </div>
+                            <ul>
+                                <li class="main__content">
+                                    <div class="main__content-left">
+                                        <div class="main__date">12.10.24</div>
+                                        <span class="main__time">2-й тайм</span>
+                                    </div>
+                                    <div class="main__content-center">
+                                        <div class="main__teams">
+                                            <div class="main__team-left">
+                                                <span>Бавария</span>
+                                                <div class="main__team-icon">
+                                                    <img src="img/main/team.svg" alt="team">
+                                                </div>
+                                            </div>
+                                            <span class="main__vs">VS</span>
+                                            <div class="main__team-right">
+                                                <div class="main__team-icon">
+                                                    <img src="img/main/team2.svg" alt="team">
+                                                </div>
+                                                <span>Боруссия М</span>
+                                            </div>
+                                        </div>
+                                        <div class="main__score">2:1 (1:0)</div>
+                                        <ul>
+                                            <li class="main__players main__players_left">
+                                                <ul class="main__players-center">
+                                                    <li>
+                                                        <div class="main__players-center-icon">
+                                                            <img src="img/main/arrow-up.svg" alt="arrow-up">
+                                                        </div>
+                                                        <div class="main__players-center-number">
+                                                            1
+                                                            <span>´</span>
+                                                        </div>
+                                                    </li>
+                                                    <li>
+                                                        <div class="main__players-center-icon">
+                                                            <img src="img/main/gol.svg" alt="gol">
+                                                        </div>
+                                                        <span>43´</span>
+                                                    </li>
+                                                    <li>
+                                                        <div class="main__players-center-icon">
+                                                            <img src="img/main/kk.svg" alt="kk">
+                                                        </div>
+                                                        <span>79´</span>
+                                                    </li>
+                                                </ul>
+                                                <div class="main__player">
+                                                    <span class="main__player-team">ЗЕН</span>
+                                                    <span class="main__player-name">Марадона</span>
+                                                </div>
+                                            </li>
+                                            <li class="main__players main__players_right">
+                                                <ul class="main__players-center">
+                                                    <li>
+                                                        <div class="main__players-center-icon">
+                                                            <img src="img/main/arrow-up.svg" alt="arrow-up">
+                                                        </div>
+                                                        <span>1´</span>
+                                                    </li>
+                                                    <li>
+                                                        <div class="main__players-center-icon">
+                                                            <img src="img/main/arrow-down.svg" alt="arrow-down">
+                                                        </div>
+                                                        <span>69´</span>
+                                                    </li>
+                                                </ul>
+                                                <div class="main__player">
+                                                    <span class="main__player-team">ЛОК</span>
+                                                    <span class="main__player-name">Зидан</span>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="main__table">
+                                        <div class="main__table-icon">
+                                            <img src="img/tabs/Tables.svg" alt="Tables">
+                                        </div>
+                                        <span>Таблицы</span>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </section>
+            </div>
+            <section class="side">
+                <div class="side__block">
+                    <div class="side__header">
+                        <h2 class="side__title">Новости</h2>
+                        <div class="side__arrow">
+                            <svg><use xlink:href="#arrow-right"></use></svg>
+                        </div>
+                    </div>
+                    <ul class="side__news">
+                        <li>
+                            <a href="#">
+                                <div class="side__date side__date_desktop">22:03</div>
+                                <p>Украина – Грузия – 1:0. Супергол Мудрика и первая победа в ЛН! Видеообзор</p>
+                                <div class="side__comment">
+                                    <div class="side__date side__date_mobile">22:03</div>
+                                    Комментарии:
+                                    <span>6</span>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <div class="side__date side__date_desktop">22:03</div>
+                                <p>Украина – Грузия – 1:0. Супергол Мудрика и первая победа в ЛН! Видеообзор</p>
+                                <div class="side__comment">
+                                    <div class="side__date side__date_mobile">22:03</div>
+                                    Комментарии:
+                                    <span>6</span>
+                                </div>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="side__block">
+                    <div class="side__header">
+                        <h2 class="side__title">Команды</h2>
+                        <div class="side__arrow">
+                            <svg><use xlink:href="#arrow-right"></use></svg>
+                        </div>
+                    </div>
+                    <div class="side__teams">
+                        <div class="side__item side__item_first">
+                            <div class="side__team">Команда</div>
+                            <div class="side__country">Страна</div>
+                            <div class="side__place">Место</div>
+                        </div>
+                        <ul class="side__table">
+                            <li class="side__item">
+                                <div class="side__team">Бавария</div>
+                                <div class="side__country">Германия</div>
+                                <div class="side__place">11</div>
+                            </li>
+                            <li class="side__item">
+                                <div class="side__team">Боруссия М</div>
+                                <div class="side__country">Германия</div>
+                                <div class="side__place">2</div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <div class="popup-menu">
+        <div class="popup-menu__main">
+            <nav class="popup-menu__tabs">
+                <ul class="popup-menu__tabs-wrap">
+                    <li class="popup-menu__tab">
+                        <div class="popup-menu__tab-icon">
+                            <img src="img/tabs/Matches.svg" alt="Matches">
+                        </div>
+                        <span>Матчи</span>
+                    </li>
+                    <li class="popup-menu__tab">
+                        <div class="popup-menu__tab-icon">
+                            <img src="img/tabs/Tables.svg" alt="Tables">
+                        </div>
+                        <span>Таблицы</span>
+                    </li>
+                    <li class="popup-menu__tab">
+                        <div class="popup-menu__tab-icon">
+                            <img src="img/tabs/Tables.svg" alt="Tables">
+                        </div>
+                        <span>Новости</span>
+                    </li>
+                    <li class="popup-menu__tab">
+                        <div class="popup-menu__tab-icon">
+                            <img src="img/tabs/Players.svg" alt="Players">
+                        </div>
+                        <span>Игроки</span>
+                    </li>
+                    <li class="popup-menu__tab">
+                        <div class="popup-menu__tab-icon">
+                            <img src="img/tabs/Coaches.svg" alt="Coaches">
+                        </div>
+                        <span>Тренеры</span>
+                    </li>
+                </ul>
+            </nav>
+            <div class="popup-menu__login">
+                <div class="popup-menu__tab">
+                    <div class="popup-menu__tab-icon">
+                        <svg><use xlink:href="#login"></use></svg>
+                    </div>
+                    <span>Войти на сайт</span>
+                </div>
+                <div class="popup-menu__login-descr">Авторизация позволит оставлять комментарии на сайте и общаться с редакцией проекта.</div>
+            </div>
+        </div>
+        <nav class="popup-menu__footer">
+            <ul class="popup-menu__footer-wrap">
+                <li><a href="#" class="popup-menu__footer-item">Контакты</a></li>
+                <li><a href="#" class="popup-menu__footer-item">О сайте</a></li>
+                <li><a href="#" class="popup-menu__footer-item">Политика конфиденциальности</a></li>
+                <li><a href="#" class="popup-menu__footer-item">Правила сайта</a></li>
+            </ul>
+        </nav>
+    </div>
+
+    <div class="overlay"></div>
+
+    <footer class="footer">
+        <div class="footer__left">
+            <div class="footer__logo">
+                <img src="img/Logo.png" alt="Logo">
+            </div>
+            <div class="footer__sublogo">© 2025. Legion RPL</div>
+        </div>
+        <nav class="footer__nav">
+            <ul>
+                <li><a href="#">Контакты</a></li>
+                <li><a href="#">О сайте</a></li>
+                <li><a href="#">Войти</a></li>
+            </ul>
+            <ul>
+                <li><a href="#">Матчи</a></li>
+                <li><a href="#">Таблицы</a></li>
+                <li><a href="#">Новости</a></li>
+            </ul>
+            <ul>
+                <li><a href="#">Игроки</a></li>
+                <li><a href="#">Тренеры</a></li>
+            </ul>
+            <ul>
+                <li><a href="#">Политика конфиденциальности</a></li>
+                <li><a href="#">Правила сайта</a></li>
+            </ul>
+        </nav>
+        <a href="#" class="pageup">
+            <div class="pageup__icon">
+                <svg><use xlink:href="#arrowUp"></use></svg>
+            </div>
+            <span>Наверх</span>
+        </ф>
+    </footer>
+
+    <svg style="display:none">
+        <symbol id="login" width="16.000000" height="16.000000" viewBox="0 0 16 16" fill="inherit">
+            <path d="M6 9L0 9L0 7L6 7L6 5L8 5L8 7L10 7L10 9L8 9L8 11L6 11L6 9ZM14 0L4 0L4 2L14 2L14 14L4 14L4 16L16 16L16 0L14 0Z" fill="#FFFFFF" fill-opacity="1.000000" fill-rule="evenodd"/>
+        </symbol>
+
+        <symbol id="arrowUp" width="10.000000" height="16.000000" viewBox="0 0 10 16" fill="inherit">
+            <defs>
+                <clipPath id="clip6001_2991">
+                    <rect id="X Arrow Big Up" rx="0.000000" width="9.000000" height="15.000000" transform="translate(0.500000 0.500000)" fill="white" fill-opacity="0"/>
+                </clipPath>
+            </defs>
+            <rect id="X Arrow Big Up" rx="0.000000" width="9.000000" height="15.000000" transform="translate(0.500000 0.500000)" fill="#FFFFFF" fill-opacity="0"/>
+            <g clip-path="url(#clip6001_2991)">
+                <path id="Vector" d="M6 0L6 2L8 2L8 4L6 4L6 16L4 16L4 4L2 4L2 2L4 2L4 0L6 0ZM0 6L2 6L2 4L0 4L0 6ZM10 6L10 4L8 4L8 6L10 6Z" fill="#140A2E" fill-opacity="1.000000" fill-rule="nonzero"/>
+            </g>
+        </symbol>
+
+        <symbol id="arrow-right" width="24.000000" height="10.000000" viewBox="0 0 24 10" fill="inherit">
+            <defs>
+                <clipPath id="clip2011_4221">
+                    <rect id="X Arrow Big Right" rx="0.000000" width="23.000000" height="9.000000" transform="translate(0.500000 0.500000)" fill="white" fill-opacity="0"/>
+                </clipPath>
+            </defs>
+            <rect id="X Arrow Big Right" rx="0.000000" width="23.000000" height="9.000000" transform="translate(0.500000 0.500000)" fill="#FFFFFF" fill-opacity="0"/>
+            <g clip-path="url(#clip2011_4221)">
+                <path id="Vector" d="M24 6L22 6L22 8L20 8L20 6L0 6L0 4L20 4L20 2L22 2L22 4L24 4L24 6ZM18 0L18 2L20 2L20 0L18 0ZM18 10L20 10L20 8L18 8L18 10Z" fill="#140A2E" fill-opacity="1.000000" fill-rule="evenodd"/>
+            </g>        
+        </symbol>
+    </svg>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html
