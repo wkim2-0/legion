@@ -1,6 +1,24 @@
 require('dotenv').config();
-const apiHost = process.env.API_HOST;
-const apiKey = process.env.API_KEY;
+
+async function getData(apiHost) {
+    const apiHost = process.env.API_HOST;
+    const apiKey = process.env.API_KEY;
+    try {
+        const response = await fetch(apiHost);
+        if (!response.ok) {
+            throw new Error(`Ошибка HTTP: ${response.status}`);
+        }
+        const data = await response.json();
+        return data;
+    } catch (error) {
+        console.error("Ошибка при получении данных:", error);
+    }
+}
+
+getData().then(data => {
+    console.log("Полученные данные:", data)
+})
+
 
 // Адаптив страницы с 1200 по 800
 function scalePage() {
